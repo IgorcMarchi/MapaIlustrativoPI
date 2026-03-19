@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ed2732a4b5ee9b2412c0c988932383f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3ed2732a4b5ee9b2412c0c988932383f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3ed2732a4b5ee9b2412c0c988932383f = L.map(
+                "map_3ed2732a4b5ee9b2412c0c988932383f",
+                {
+                    center: [-24.842, -54.333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31c187661a049ab1a19c65817b2a8292 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_31c187661a049ab1a19c65817b2a8292.addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var marker_ccd1a952a79aeb9326e782a75dea9e9b = L.marker(
+                [-24.84235, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_d53ac06b17e91a1a1c371c97d741fcd1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                1\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_3b1a4b75fd0a7c972e2d1848eda3209a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8e6cdfc35fd6d264cea6d6f99bcd136 = $(`<div id="html_a8e6cdfc35fd6d264cea6d6f99bcd136" style="width: 100.0%; height: 100.0%;">Quiosque 1 - livre</div>`)[0];
+                popup_3b1a4b75fd0a7c972e2d1848eda3209a.setContent(html_a8e6cdfc35fd6d264cea6d6f99bcd136);
+            
+        
+
+        marker_ccd1a952a79aeb9326e782a75dea9e9b.bindPopup(popup_3b1a4b75fd0a7c972e2d1848eda3209a)
+        ;
+
+        
+    
+    
+                marker_ccd1a952a79aeb9326e782a75dea9e9b.setIcon(div_icon_d53ac06b17e91a1a1c371c97d741fcd1);
+            
+    
+            var marker_0dbdbdfb29e5e54e8200f9ae31abfa49 = L.marker(
+                [-24.84247, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_c889bdb851fe878920615296e6bad17d = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                2\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_6ebc7fbb5adbfd555479a753be825210 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0a986bfaf12845c941d5658dcc40a71 = $(`<div id="html_f0a986bfaf12845c941d5658dcc40a71" style="width: 100.0%; height: 100.0%;">Quiosque 2 - alugado</div>`)[0];
+                popup_6ebc7fbb5adbfd555479a753be825210.setContent(html_f0a986bfaf12845c941d5658dcc40a71);
+            
+        
+
+        marker_0dbdbdfb29e5e54e8200f9ae31abfa49.bindPopup(popup_6ebc7fbb5adbfd555479a753be825210)
+        ;
+
+        
+    
+    
+                marker_0dbdbdfb29e5e54e8200f9ae31abfa49.setIcon(div_icon_c889bdb851fe878920615296e6bad17d);
+            
+    
+            var marker_480f1c7b626a0d1f3b29016a34e5abf4 = L.marker(
+                [-24.84259, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_1cf436694da15026de397905a18955dd = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                3\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_51720af064d7d9dad9e55cea9caa16d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_481eca410a6d9f9c2f5340dd9ecaad08 = $(`<div id="html_481eca410a6d9f9c2f5340dd9ecaad08" style="width: 100.0%; height: 100.0%;">Quiosque 3 - livre</div>`)[0];
+                popup_51720af064d7d9dad9e55cea9caa16d0.setContent(html_481eca410a6d9f9c2f5340dd9ecaad08);
+            
+        
+
+        marker_480f1c7b626a0d1f3b29016a34e5abf4.bindPopup(popup_51720af064d7d9dad9e55cea9caa16d0)
+        ;
+
+        
+    
+    
+                marker_480f1c7b626a0d1f3b29016a34e5abf4.setIcon(div_icon_1cf436694da15026de397905a18955dd);
+            
+    
+            var marker_5251a657bf33cc7d1f9eac467b7a15ed = L.marker(
+                [-24.84271, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_f12838187011db639e00c4036b17c8b2 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                4\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_20d564f674ed52f89582d29ba29275f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dff87c575e044bc81d1eff34bd907995 = $(`<div id="html_dff87c575e044bc81d1eff34bd907995" style="width: 100.0%; height: 100.0%;">Quiosque 4 - livre</div>`)[0];
+                popup_20d564f674ed52f89582d29ba29275f3.setContent(html_dff87c575e044bc81d1eff34bd907995);
+            
+        
+
+        marker_5251a657bf33cc7d1f9eac467b7a15ed.bindPopup(popup_20d564f674ed52f89582d29ba29275f3)
+        ;
+
+        
+    
+    
+                marker_5251a657bf33cc7d1f9eac467b7a15ed.setIcon(div_icon_f12838187011db639e00c4036b17c8b2);
+            
+    
+            var marker_7d2a17604f5125469059ffd5413a3d6d = L.marker(
+                [-24.84283, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_c04139c2de7be3533ac42e52e5785ac6 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                5\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_56f9bc4fba3d77e43fd71184cc6d8832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c2138053a445af1032ee151bc9ee206 = $(`<div id="html_9c2138053a445af1032ee151bc9ee206" style="width: 100.0%; height: 100.0%;">Quiosque 5 - alugado</div>`)[0];
+                popup_56f9bc4fba3d77e43fd71184cc6d8832.setContent(html_9c2138053a445af1032ee151bc9ee206);
+            
+        
+
+        marker_7d2a17604f5125469059ffd5413a3d6d.bindPopup(popup_56f9bc4fba3d77e43fd71184cc6d8832)
+        ;
+
+        
+    
+    
+                marker_7d2a17604f5125469059ffd5413a3d6d.setIcon(div_icon_c04139c2de7be3533ac42e52e5785ac6);
+            
+    
+            var marker_f304167691db3b171bcf24000845653e = L.marker(
+                [-24.84295, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_0d5de8832f15ca40b799d4269335afe0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                6\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_bd62ab734806d6df372cb32f595655a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6b66fc270beae788c00f94f8f5647aa = $(`<div id="html_f6b66fc270beae788c00f94f8f5647aa" style="width: 100.0%; height: 100.0%;">Quiosque 6 - livre</div>`)[0];
+                popup_bd62ab734806d6df372cb32f595655a4.setContent(html_f6b66fc270beae788c00f94f8f5647aa);
+            
+        
+
+        marker_f304167691db3b171bcf24000845653e.bindPopup(popup_bd62ab734806d6df372cb32f595655a4)
+        ;
+
+        
+    
+    
+                marker_f304167691db3b171bcf24000845653e.setIcon(div_icon_0d5de8832f15ca40b799d4269335afe0);
+            
+    
+            var marker_e9475a0080b4e4f099cc4023db0b95fc = L.marker(
+                [-24.84307, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_6b07ed7405023509966c64e855d753d0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                7\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_fa4e89789e58b02c7dc3cca0a7c9a9de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f38fd4a90f6592a3c0160749361e5fa1 = $(`<div id="html_f38fd4a90f6592a3c0160749361e5fa1" style="width: 100.0%; height: 100.0%;">Quiosque 7 - livre</div>`)[0];
+                popup_fa4e89789e58b02c7dc3cca0a7c9a9de.setContent(html_f38fd4a90f6592a3c0160749361e5fa1);
+            
+        
+
+        marker_e9475a0080b4e4f099cc4023db0b95fc.bindPopup(popup_fa4e89789e58b02c7dc3cca0a7c9a9de)
+        ;
+
+        
+    
+    
+                marker_e9475a0080b4e4f099cc4023db0b95fc.setIcon(div_icon_6b07ed7405023509966c64e855d753d0);
+            
+    
+            var marker_b871d25f3c0dacf7ab5f0c0db22e0432 = L.marker(
+                [-24.84319, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_f26576be18565784c3f516aaa43a0926 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                8\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_519c546943d626e738881368d619ec00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a4f9431e3c9266e248ea8364a293add = $(`<div id="html_6a4f9431e3c9266e248ea8364a293add" style="width: 100.0%; height: 100.0%;">Quiosque 8 - alugado</div>`)[0];
+                popup_519c546943d626e738881368d619ec00.setContent(html_6a4f9431e3c9266e248ea8364a293add);
+            
+        
+
+        marker_b871d25f3c0dacf7ab5f0c0db22e0432.bindPopup(popup_519c546943d626e738881368d619ec00)
+        ;
+
+        
+    
+    
+                marker_b871d25f3c0dacf7ab5f0c0db22e0432.setIcon(div_icon_f26576be18565784c3f516aaa43a0926);
+            
+    
+            var marker_112836910c4ace473b1b6c7f363259c2 = L.marker(
+                [-24.84331, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_354844506522c5fdb335b33c3f82b8ea = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                9\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_0dc6311509ebffc98c2ab9add7b67ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d29b581d04d3e0923059450fd1d97af5 = $(`<div id="html_d29b581d04d3e0923059450fd1d97af5" style="width: 100.0%; height: 100.0%;">Quiosque 9 - livre</div>`)[0];
+                popup_0dc6311509ebffc98c2ab9add7b67ff5.setContent(html_d29b581d04d3e0923059450fd1d97af5);
+            
+        
+
+        marker_112836910c4ace473b1b6c7f363259c2.bindPopup(popup_0dc6311509ebffc98c2ab9add7b67ff5)
+        ;
+
+        
+    
+    
+                marker_112836910c4ace473b1b6c7f363259c2.setIcon(div_icon_354844506522c5fdb335b33c3f82b8ea);
+            
+    
+            var marker_640b99453e2da17fa6669b02c9a2706d = L.marker(
+                [-24.84343, -54.33345],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_f469bb38a63c32c076ed2d19a10b4149 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                10\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_74e22444a858da077abd2e8f72044e3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4e12def8dbb258b310424570d18be64 = $(`<div id="html_d4e12def8dbb258b310424570d18be64" style="width: 100.0%; height: 100.0%;">Quiosque 10 - livre</div>`)[0];
+                popup_74e22444a858da077abd2e8f72044e3d.setContent(html_d4e12def8dbb258b310424570d18be64);
+            
+        
+
+        marker_640b99453e2da17fa6669b02c9a2706d.bindPopup(popup_74e22444a858da077abd2e8f72044e3d)
+        ;
+
+        
+    
+    
+                marker_640b99453e2da17fa6669b02c9a2706d.setIcon(div_icon_f469bb38a63c32c076ed2d19a10b4149);
+            
+    
+            var marker_224fb7c3ee62cb1b2d325279dac14379 = L.marker(
+                [-24.84235, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_4a723100fc54c3103fcc1801ba66f83a = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                11\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_225a3b4b20db6f90d30ef6f9b7e3a65a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0487f6c558e66139e1b70fc561512ea = $(`<div id="html_f0487f6c558e66139e1b70fc561512ea" style="width: 100.0%; height: 100.0%;">Quiosque 11 - alugado</div>`)[0];
+                popup_225a3b4b20db6f90d30ef6f9b7e3a65a.setContent(html_f0487f6c558e66139e1b70fc561512ea);
+            
+        
+
+        marker_224fb7c3ee62cb1b2d325279dac14379.bindPopup(popup_225a3b4b20db6f90d30ef6f9b7e3a65a)
+        ;
+
+        
+    
+    
+                marker_224fb7c3ee62cb1b2d325279dac14379.setIcon(div_icon_4a723100fc54c3103fcc1801ba66f83a);
+            
+    
+            var marker_abea5cbb211d86f6a60181f52856141a = L.marker(
+                [-24.84247, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_e2654eca022fc71be519f97c177795d9 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                12\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_f662f441a3d78d07926a0970e6fd681d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b34d8c4a9adfbe29d21ed8e8ea0dc2e = $(`<div id="html_0b34d8c4a9adfbe29d21ed8e8ea0dc2e" style="width: 100.0%; height: 100.0%;">Quiosque 12 - livre</div>`)[0];
+                popup_f662f441a3d78d07926a0970e6fd681d.setContent(html_0b34d8c4a9adfbe29d21ed8e8ea0dc2e);
+            
+        
+
+        marker_abea5cbb211d86f6a60181f52856141a.bindPopup(popup_f662f441a3d78d07926a0970e6fd681d)
+        ;
+
+        
+    
+    
+                marker_abea5cbb211d86f6a60181f52856141a.setIcon(div_icon_e2654eca022fc71be519f97c177795d9);
+            
+    
+            var marker_c05fff26472d96f789c42b8c6c64b057 = L.marker(
+                [-24.84259, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_5f74beb8f498eeb5a81a08ab28d1e136 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                13\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_73777bd1e458e98adb4928ccf1db614e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d08a3aecbf0369798fcdbadf90f58cd0 = $(`<div id="html_d08a3aecbf0369798fcdbadf90f58cd0" style="width: 100.0%; height: 100.0%;">Quiosque 13 - livre</div>`)[0];
+                popup_73777bd1e458e98adb4928ccf1db614e.setContent(html_d08a3aecbf0369798fcdbadf90f58cd0);
+            
+        
+
+        marker_c05fff26472d96f789c42b8c6c64b057.bindPopup(popup_73777bd1e458e98adb4928ccf1db614e)
+        ;
+
+        
+    
+    
+                marker_c05fff26472d96f789c42b8c6c64b057.setIcon(div_icon_5f74beb8f498eeb5a81a08ab28d1e136);
+            
+    
+            var marker_7f3c21ec12e065fbc312d18588503775 = L.marker(
+                [-24.84271, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_f6b09fe006031ebc534815cf93de5814 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                14\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_5b204ecada3619cb30311d2a646d8af1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdfd712af66cebdbf8a8b735921c08d0 = $(`<div id="html_bdfd712af66cebdbf8a8b735921c08d0" style="width: 100.0%; height: 100.0%;">Quiosque 14 - alugado</div>`)[0];
+                popup_5b204ecada3619cb30311d2a646d8af1.setContent(html_bdfd712af66cebdbf8a8b735921c08d0);
+            
+        
+
+        marker_7f3c21ec12e065fbc312d18588503775.bindPopup(popup_5b204ecada3619cb30311d2a646d8af1)
+        ;
+
+        
+    
+    
+                marker_7f3c21ec12e065fbc312d18588503775.setIcon(div_icon_f6b09fe006031ebc534815cf93de5814);
+            
+    
+            var marker_1c01e56d1102c683befa4ba83f6fac40 = L.marker(
+                [-24.84283, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_2b2725fa3ffa989be9396f895ab3f11f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                15\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_eda5593ff997baa1aa4adf3ec13a7239 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99cc029683c778948db821b7f8e23d16 = $(`<div id="html_99cc029683c778948db821b7f8e23d16" style="width: 100.0%; height: 100.0%;">Quiosque 15 - livre</div>`)[0];
+                popup_eda5593ff997baa1aa4adf3ec13a7239.setContent(html_99cc029683c778948db821b7f8e23d16);
+            
+        
+
+        marker_1c01e56d1102c683befa4ba83f6fac40.bindPopup(popup_eda5593ff997baa1aa4adf3ec13a7239)
+        ;
+
+        
+    
+    
+                marker_1c01e56d1102c683befa4ba83f6fac40.setIcon(div_icon_2b2725fa3ffa989be9396f895ab3f11f);
+            
+    
+            var marker_ccf950415a7da5527c2c3b18d4a791eb = L.marker(
+                [-24.84295, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_8de1a29889b1c161a1a3474cafd1cb8f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                16\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_97c2af219048a93103122f5459f0d820 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d7cb2bcb79d16180790821b5d38c41d = $(`<div id="html_9d7cb2bcb79d16180790821b5d38c41d" style="width: 100.0%; height: 100.0%;">Quiosque 16 - livre</div>`)[0];
+                popup_97c2af219048a93103122f5459f0d820.setContent(html_9d7cb2bcb79d16180790821b5d38c41d);
+            
+        
+
+        marker_ccf950415a7da5527c2c3b18d4a791eb.bindPopup(popup_97c2af219048a93103122f5459f0d820)
+        ;
+
+        
+    
+    
+                marker_ccf950415a7da5527c2c3b18d4a791eb.setIcon(div_icon_8de1a29889b1c161a1a3474cafd1cb8f);
+            
+    
+            var marker_310dcd10f080b3471348360109bf364e = L.marker(
+                [-24.84307, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_e6cb4cb838c01174d37548c7816f5492 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                17\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_0c7c877319ed00fb20d254a2aa4e9fe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_083cf4a910d6b10d1cd41fec30465e73 = $(`<div id="html_083cf4a910d6b10d1cd41fec30465e73" style="width: 100.0%; height: 100.0%;">Quiosque 17 - livre</div>`)[0];
+                popup_0c7c877319ed00fb20d254a2aa4e9fe2.setContent(html_083cf4a910d6b10d1cd41fec30465e73);
+            
+        
+
+        marker_310dcd10f080b3471348360109bf364e.bindPopup(popup_0c7c877319ed00fb20d254a2aa4e9fe2)
+        ;
+
+        
+    
+    
+                marker_310dcd10f080b3471348360109bf364e.setIcon(div_icon_e6cb4cb838c01174d37548c7816f5492);
+            
+    
+            var marker_056a8ee21c73f7505115b5e85e983087 = L.marker(
+                [-24.84319, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_2881f32d1ee8d49530abdd767d027656 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                18\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_ce357bea12d224a3809394a164c13603 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15b7de4bb2ebaff95ec54e24947406e7 = $(`<div id="html_15b7de4bb2ebaff95ec54e24947406e7" style="width: 100.0%; height: 100.0%;">Quiosque 18 - alugado</div>`)[0];
+                popup_ce357bea12d224a3809394a164c13603.setContent(html_15b7de4bb2ebaff95ec54e24947406e7);
+            
+        
+
+        marker_056a8ee21c73f7505115b5e85e983087.bindPopup(popup_ce357bea12d224a3809394a164c13603)
+        ;
+
+        
+    
+    
+                marker_056a8ee21c73f7505115b5e85e983087.setIcon(div_icon_2881f32d1ee8d49530abdd767d027656);
+            
+    
+            var marker_35b1ac8a16e2bb62222cfc6db0f918a2 = L.marker(
+                [-24.84331, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_59dac3b501ae08e573063796b1606c0e = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                19\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_dc3cb82fb102d524729acb2625cbd243 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5e1edd26612d9b30d36b6d48a9c15be = $(`<div id="html_b5e1edd26612d9b30d36b6d48a9c15be" style="width: 100.0%; height: 100.0%;">Quiosque 19 - livre</div>`)[0];
+                popup_dc3cb82fb102d524729acb2625cbd243.setContent(html_b5e1edd26612d9b30d36b6d48a9c15be);
+            
+        
+
+        marker_35b1ac8a16e2bb62222cfc6db0f918a2.bindPopup(popup_dc3cb82fb102d524729acb2625cbd243)
+        ;
+
+        
+    
+    
+                marker_35b1ac8a16e2bb62222cfc6db0f918a2.setIcon(div_icon_59dac3b501ae08e573063796b1606c0e);
+            
+    
+            var marker_0156304796835f71a17b5025dc7a8ad3 = L.marker(
+                [-24.84343, -54.3333],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_1b003de932a7d22fc1dd5d2cf78c1768 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                20\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_4d73433a5202bbb9f46493a468408baa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddf6da750d0cffae9e234a8b2095bbff = $(`<div id="html_ddf6da750d0cffae9e234a8b2095bbff" style="width: 100.0%; height: 100.0%;">Quiosque 20 - livre</div>`)[0];
+                popup_4d73433a5202bbb9f46493a468408baa.setContent(html_ddf6da750d0cffae9e234a8b2095bbff);
+            
+        
+
+        marker_0156304796835f71a17b5025dc7a8ad3.bindPopup(popup_4d73433a5202bbb9f46493a468408baa)
+        ;
+
+        
+    
+    
+                marker_0156304796835f71a17b5025dc7a8ad3.setIcon(div_icon_1b003de932a7d22fc1dd5d2cf78c1768);
+            
+    
+            var marker_d86b937a8f626e3a99d4c549207e7828 = L.marker(
+                [-24.84235, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_a2baecb19ca000dea0b8283dc66dfd4a = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                21\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_1e9547199cf6f97fb0c4c1e547aa98eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_170b1d8fc4dcf4c9f92534367e47b340 = $(`<div id="html_170b1d8fc4dcf4c9f92534367e47b340" style="width: 100.0%; height: 100.0%;">Quiosque 21 - livre</div>`)[0];
+                popup_1e9547199cf6f97fb0c4c1e547aa98eb.setContent(html_170b1d8fc4dcf4c9f92534367e47b340);
+            
+        
+
+        marker_d86b937a8f626e3a99d4c549207e7828.bindPopup(popup_1e9547199cf6f97fb0c4c1e547aa98eb)
+        ;
+
+        
+    
+    
+                marker_d86b937a8f626e3a99d4c549207e7828.setIcon(div_icon_a2baecb19ca000dea0b8283dc66dfd4a);
+            
+    
+            var marker_cc5444be27be031d8316611418e9bc03 = L.marker(
+                [-24.84247, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_dca82d5c6ab685ea5a4fbaaf51f0409d = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                22\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_63e9e9bb8acd5d55cdf04b8131f29b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59037ae518a526099b431b47ecf9dad7 = $(`<div id="html_59037ae518a526099b431b47ecf9dad7" style="width: 100.0%; height: 100.0%;">Quiosque 22 - livre</div>`)[0];
+                popup_63e9e9bb8acd5d55cdf04b8131f29b9a.setContent(html_59037ae518a526099b431b47ecf9dad7);
+            
+        
+
+        marker_cc5444be27be031d8316611418e9bc03.bindPopup(popup_63e9e9bb8acd5d55cdf04b8131f29b9a)
+        ;
+
+        
+    
+    
+                marker_cc5444be27be031d8316611418e9bc03.setIcon(div_icon_dca82d5c6ab685ea5a4fbaaf51f0409d);
+            
+    
+            var marker_8ad7b7dd55b733cad6d0f38cd073fe52 = L.marker(
+                [-24.84259, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_51a90e3f4fd257c354b10b715f432ebc = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:blue;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                23\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_6b5d9aa6823dc19b7b36851f00f65e55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c00edf629001e7bda5093d1e4c9006db = $(`<div id="html_c00edf629001e7bda5093d1e4c9006db" style="width: 100.0%; height: 100.0%;">Quiosque 23 - alugado</div>`)[0];
+                popup_6b5d9aa6823dc19b7b36851f00f65e55.setContent(html_c00edf629001e7bda5093d1e4c9006db);
+            
+        
+
+        marker_8ad7b7dd55b733cad6d0f38cd073fe52.bindPopup(popup_6b5d9aa6823dc19b7b36851f00f65e55)
+        ;
+
+        
+    
+    
+                marker_8ad7b7dd55b733cad6d0f38cd073fe52.setIcon(div_icon_51a90e3f4fd257c354b10b715f432ebc);
+            
+    
+            var marker_64740386da3c982f8d01f90cc8cadcfc = L.marker(
+                [-24.84271, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_9af9bd809a1f2ef556b64c936f8734c8 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                24\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_e29166306a11a639e75d5659976de2de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c07be8c494939c184274924eca8b5dbc = $(`<div id="html_c07be8c494939c184274924eca8b5dbc" style="width: 100.0%; height: 100.0%;">Quiosque 24 - livre</div>`)[0];
+                popup_e29166306a11a639e75d5659976de2de.setContent(html_c07be8c494939c184274924eca8b5dbc);
+            
+        
+
+        marker_64740386da3c982f8d01f90cc8cadcfc.bindPopup(popup_e29166306a11a639e75d5659976de2de)
+        ;
+
+        
+    
+    
+                marker_64740386da3c982f8d01f90cc8cadcfc.setIcon(div_icon_9af9bd809a1f2ef556b64c936f8734c8);
+            
+    
+            var marker_b01b9b215475eb21a7ecd3bf421766be = L.marker(
+                [-24.84283, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_a748e95b6d14867d389073dc741b6d8f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                25\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_db63fe0b4b749d0f8a0355a283225a63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686478cf6e4bb3ab79f6d94903c58671 = $(`<div id="html_686478cf6e4bb3ab79f6d94903c58671" style="width: 100.0%; height: 100.0%;">Quiosque 25 - livre</div>`)[0];
+                popup_db63fe0b4b749d0f8a0355a283225a63.setContent(html_686478cf6e4bb3ab79f6d94903c58671);
+            
+        
+
+        marker_b01b9b215475eb21a7ecd3bf421766be.bindPopup(popup_db63fe0b4b749d0f8a0355a283225a63)
+        ;
+
+        
+    
+    
+                marker_b01b9b215475eb21a7ecd3bf421766be.setIcon(div_icon_a748e95b6d14867d389073dc741b6d8f);
+            
+    
+            var marker_8b4a537d893a600149b066f40ba2846d = L.marker(
+                [-24.84295, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_cd1f6e687fe4a1206af69d85ec201cdf = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                26\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_7fe740f18f073621cc8ab01bd6eb8093 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e752a215f887e1488d69da52e40b3551 = $(`<div id="html_e752a215f887e1488d69da52e40b3551" style="width: 100.0%; height: 100.0%;">Quiosque 26 - livre</div>`)[0];
+                popup_7fe740f18f073621cc8ab01bd6eb8093.setContent(html_e752a215f887e1488d69da52e40b3551);
+            
+        
+
+        marker_8b4a537d893a600149b066f40ba2846d.bindPopup(popup_7fe740f18f073621cc8ab01bd6eb8093)
+        ;
+
+        
+    
+    
+                marker_8b4a537d893a600149b066f40ba2846d.setIcon(div_icon_cd1f6e687fe4a1206af69d85ec201cdf);
+            
+    
+            var marker_303d888ad90a9b0249bf611a83f5880c = L.marker(
+                [-24.84307, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_e7ee064d90b23fd42593c6b95a8f1079 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                27\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_e67df37cd9a6728faaf86af71626d14f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba99894d1c4bda3b2758fdf2c3e4c92b = $(`<div id="html_ba99894d1c4bda3b2758fdf2c3e4c92b" style="width: 100.0%; height: 100.0%;">Quiosque 27 - livre</div>`)[0];
+                popup_e67df37cd9a6728faaf86af71626d14f.setContent(html_ba99894d1c4bda3b2758fdf2c3e4c92b);
+            
+        
+
+        marker_303d888ad90a9b0249bf611a83f5880c.bindPopup(popup_e67df37cd9a6728faaf86af71626d14f)
+        ;
+
+        
+    
+    
+                marker_303d888ad90a9b0249bf611a83f5880c.setIcon(div_icon_e7ee064d90b23fd42593c6b95a8f1079);
+            
+    
+            var marker_9186d9b5e015501c0aed63d029d5fb6a = L.marker(
+                [-24.84319, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_6fdbbb2b7ad25eb6678d4993a4a396fc = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                28\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_70e25f680cf1e0b865883d957840208d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb9dbc05a0e56c91695ee7006ce74bdf = $(`<div id="html_fb9dbc05a0e56c91695ee7006ce74bdf" style="width: 100.0%; height: 100.0%;">Quiosque 28 - livre</div>`)[0];
+                popup_70e25f680cf1e0b865883d957840208d.setContent(html_fb9dbc05a0e56c91695ee7006ce74bdf);
+            
+        
+
+        marker_9186d9b5e015501c0aed63d029d5fb6a.bindPopup(popup_70e25f680cf1e0b865883d957840208d)
+        ;
+
+        
+    
+    
+                marker_9186d9b5e015501c0aed63d029d5fb6a.setIcon(div_icon_6fdbbb2b7ad25eb6678d4993a4a396fc);
+            
+    
+            var marker_b62c22ed7e6477303830265d05ff1d52 = L.marker(
+                [-24.84331, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_b25c38be5248b04136345aea45548dcb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                29\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_41cdc208c59dac09ed5e49698270b99d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5b543ae575db511c47b34d769c32a43 = $(`<div id="html_d5b543ae575db511c47b34d769c32a43" style="width: 100.0%; height: 100.0%;">Quiosque 29 - livre</div>`)[0];
+                popup_41cdc208c59dac09ed5e49698270b99d.setContent(html_d5b543ae575db511c47b34d769c32a43);
+            
+        
+
+        marker_b62c22ed7e6477303830265d05ff1d52.bindPopup(popup_41cdc208c59dac09ed5e49698270b99d)
+        ;
+
+        
+    
+    
+                marker_b62c22ed7e6477303830265d05ff1d52.setIcon(div_icon_b25c38be5248b04136345aea45548dcb);
+            
+    
+            var marker_03b9dcaf3889966f5c8a351b039f4c4b = L.marker(
+                [-24.84343, -54.33315],
+                {
+}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+            var div_icon_54fdb5beb43623e13fb7eff26b490067 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:14px;\n                color:white;\n                background:green;\n                border-radius:50%;\n                width:30px;\n                height:30px;\n                text-align:center;\n                line-height:30px;\n                font-weight:bold;\n            \"\u003e\n                30\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_c7acd18eab894504b1d1733e1bdeb1f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2696ed6004b66497db208cc87691a46 = $(`<div id="html_d2696ed6004b66497db208cc87691a46" style="width: 100.0%; height: 100.0%;">Quiosque 30 - livre</div>`)[0];
+                popup_c7acd18eab894504b1d1733e1bdeb1f8.setContent(html_d2696ed6004b66497db208cc87691a46);
+            
+        
+
+        marker_03b9dcaf3889966f5c8a351b039f4c4b.bindPopup(popup_c7acd18eab894504b1d1733e1bdeb1f8)
+        ;
+
+        
+    
+    
+                marker_03b9dcaf3889966f5c8a351b039f4c4b.setIcon(div_icon_54fdb5beb43623e13fb7eff26b490067);
+            
+    
+            var polygon_6903372d97312317a43fb65b4ae38048 = L.polygon(
+                [[-24.84229369461306, -54.33259825825656], [-24.84229369461306, -54.33282], [-24.84182, -54.33282], [-24.84182, -54.33259825825656]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+        var popup_78a09bef7cb9f01d33c91d5ae36540d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7db7b15197f615afe24f5835825960d7 = $(`<div id="html_7db7b15197f615afe24f5835825960d7" style="width: 100.0%; height: 100.0%;">Salão 1 - livre</div>`)[0];
+                popup_78a09bef7cb9f01d33c91d5ae36540d3.setContent(html_7db7b15197f615afe24f5835825960d7);
+            
+        
+
+        polygon_6903372d97312317a43fb65b4ae38048.bindPopup(popup_78a09bef7cb9f01d33c91d5ae36540d3)
+        ;
+
+        
+    
+    
+            var polygon_9019a264e32afcc6ae2add3b5b0e21d7 = L.polygon(
+                [[-24.84175, -54.33259825825656], [-24.84175, -54.33282], [-24.84128, -54.33282], [-24.84128, -54.33259825825656]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3ed2732a4b5ee9b2412c0c988932383f);
+        
+    
+        var popup_dac3fd8eac23a15bfe007eb54675b526 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfbd587e0ce715ef89a2658c006f8cb2 = $(`<div id="html_bfbd587e0ce715ef89a2658c006f8cb2" style="width: 100.0%; height: 100.0%;">Salão 2 - reservado</div>`)[0];
+                popup_dac3fd8eac23a15bfe007eb54675b526.setContent(html_bfbd587e0ce715ef89a2658c006f8cb2);
+            
+        
+
+        polygon_9019a264e32afcc6ae2add3b5b0e21d7.bindPopup(popup_dac3fd8eac23a15bfe007eb54675b526)
+        ;
+
+        
+    
+</script>
+</html>
