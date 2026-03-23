@@ -2,89 +2,127 @@ import folium
 from folium.features import DivIcon
 
 mapa = folium.Map(
-    location=[-24.8420, -54.3330],
+    location=[-24.8426, -54.3331],
     zoom_start=18,
     tiles="cartodbpositron"
 )
 
+# ================= QUIOSQUES =================
 
-# 🔵 QUIOSQUES
+with open("quiosques.txt") as arquivo_q:
+    for linha in arquivo_q:
+        linha = linha.strip()
+        if linha == "":
+            continue
 
+        dados = linha.split(",")
 
-arquivo_q = open("quiosques.txt", "r")
+        numero = int(dados[0])
+        lat = float(dados[1])
+        lon = float(dados[2])
+        status = dados[3]
 
-for linha in arquivo_q:
-    dados = linha.strip().split(",")
+        cor = "blue" if status == "alugado" else "green"
 
-    numero = int(dados[0])
-    lat = float(dados[1])
-    lon = float(dados[2])
-    status = dados[3]
+        folium.Marker(
+            location=[lat, lon],
+            popup=f"Quiosque {numero} - {status}",
+            icon=DivIcon(html=f"""
+                <div style="
+                    font-size:14px;
+                    color:white;
+                    background:{cor};
+                    border-radius:50%;
+                    width:30px;
+                    height:30px;
+                    text-align:center;
+                    line-height:30px;
+                    font-weight:bold;">
+                    {numero}
+                </div>
+            """)
+        ).add_to(mapa)
 
-    if status == "alugado":
-        cor = "blue"
-    else:
-        cor = "green"
+# ================= SALÕES =================
 
-    folium.Marker(
-        location=[lat, lon],
-        popup=f"Quiosque {numero} - {status}",
-        icon=DivIcon(html=f"""
-            <div style="
-                font-size:14px;
-                color:white;
-                background:{cor};
-                border-radius:50%;
-                width:30px;
-                height:30px;
-                text-align:center;
-                line-height:30px;
-                font-weight:bold;
-            ">
-                {numero}
-            </div>
-        """)
-    ).add_to(mapa)
+with open("saloes.txt") as arquivo_s:
+    for linha in arquivo_s:
+        linha = linha.strip()
+        if linha == "":
+            continue
 
-arquivo_q.close()
+        dados = linha.split(",")
 
+        numero = dados[0]
 
-# SALÕES
+        coords = [
+            [float(dados[1]), float(dados[2])],
+            [float(dados[3]), float(dados[4])],
+            [float(dados[5]), float(dados[6])],
+            [float(dados[7]), float(dados[8])]
+        ]
 
+        status = dados[9]
+        cor = "red" if status == "reservado" else "green"
 
-arquivo_s = open("saloes.txt", "r")
+        folium.Polygon(
+            locations=coords,
+            color=cor,
+            fill=True,
+            fill_color=cor,
+            fill_opacity=0.4,
+            popup=f"Salão {numero} - {status}"
+        ).add_to(mapa)
 
-for linha in arquivo_s:
-    dados = linha.strip().split(",")
+# ================= BANHEIROS =================
 
-    numero = dados[0]
+with open("banheiros.txt") as arquivo_b:
+    for linha in arquivo_b:
+        linha = linha.strip()
+        if linha == "":
+            continue
 
-    coords = [
-        [float(dados[1]), float(dados[2])],
-        [float(dados[3]), float(dados[4])],
-        [float(dados[5]), float(dados[6])],
-        [float(dados[7]), float(dados[8])]
-    ]
+        dados = linha.split(",")
 
-    status = dados[9]
+        numero = dados[0]
 
-    if status == "reservado":
-        cor = "red"
-    else:
-        cor = "green"
+        lat1 = float(dados[1])
+        lon1 = float(dados[2])
+        lat2 = float(dados[5])
+        lon2 = float(dados[6])
 
-    folium.Polygon(
-        locations=coords,
-        color=cor,
-        fill=True,
-        fill_color=cor,
-        fill_opacity=0.4,
-        popup=f"Salão {numero} - {status}"
-    ).add_to(mapa)
+        centro_lat = (lat1 + lat2) / 2
+        centro_lon = (lon1 + lon2) / 2
 
-arquivo_s.close()
+        coords = [
+            [float(dados[1]), float(dados[2])],
+            [float(dados[3]), float(dados[4])],
+            [float(dados[5]), float(dados[6])],
+            [float(dados[7]), float(dados[8])]
+        ]
 
-# =========================
+        folium.Polygon(
+            locations=coords,
+            color="yellow",
+            fill=True,
+            fill_color="yellow",
+            fill_opacity=0.7,
+            popup=f"Banheiro {numero}"
+        ).add_to(mapa)
+
+        folium.Marker(
+            location=[centro_lat, centro_lon],
+            icon=DivIcon(html="""
+                <div style="
+                    font-size:18px;
+                    text-align:center;">
+                    🚻
+                </div>
+            """)
+        ).add_to(mapa)
+
+# ================= FINAL =================
+
 mapa.save("mapa_completo.html")
 
-print("Mapa completo criado!")
+print("Mapa criado com sucesso")
